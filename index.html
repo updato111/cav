@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>@VieraPy</title>
+    
+    <base href="/" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <style>
+        body {
+            background: #1a0933;
+            color: black;
+            font-family: "Playpen Sans", sans-serif;
+            margin: 0
+        }
+        button {
+            font-family: "Playpen Sans", sans-serif;
+            color: black;
+        }
+        a {
+            text-decoration: none;
+        }
+
+        /* #preloader {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        } */
+        #preloader {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('loading.png');
+            width: 100%;
+            background-position: top center;
+            background-size: cover;
+        }
+        #preloader span {
+            width: 90px;
+            height: 90px;
+            position: relative;
+        }
+        #preloader span:before {
+            content: "";
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 5px solid #e0e0e0;
+            border-top-color: #9657f2;
+            animation: spin 1s linear infinite;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+    <script type="module" crossorigin src="./assets/index-503f459c.js"></script>
+    <link rel="stylesheet" href="./assets/index-9a2515bb.css">
+  </head>
+  <body>
+    <div id="preloader"><span></span></div>
+    <div id="root"></div>
+    
+  <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'8b4cceb84b2d2c18',t:'MTcyMzkzMDY2OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
